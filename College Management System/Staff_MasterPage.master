@@ -1,0 +1,268 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Staff_MasterPage.master.cs" Inherits="Staff_MasterPage" %>
+
+<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="ajaxToolkit" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        
+        html
+        {
+        height:100%;    
+            
+        }
+        body
+        {
+    
+         background:linear-gradient(to right, #E0FFFF, #00FFFF, #E0FFFF);
+           
+         min-height:100%;
+         
+        }
+       .wrp
+       {
+           
+        width:950px;
+        margin:auto;   
+         
+       }
+       ffimg 
+       {
+             background-color:#20b2aa;
+           width:950px;
+           
+       }
+       
+        .i
+       {
+            width:950px;
+            border:1px solid black;
+           border-radius:5px;
+       }
+       
+         *
+        {
+         margin:0px;
+         padding:0px;
+           
+        }          
+        
+        
+           .cl
+        {
+         clear:both;   
+        }
+        
+           .ff
+     {
+      border:1px solid rgb(224,224,224);
+           border-radius:5px; 
+           float:left;
+           margin-top:8px;
+           margin-bottom:8px;
+            min-height:100px;
+       width:100%;
+      background-color: #20b2aa;  
+      margin-top:auto; 
+       
+      position: relative;
+       
+     }
+     .f11
+     {
+              
+     margin-left:80px;
+          
+     }
+     .f2
+     {
+           margin-left:80px;
+     }
+      .f2 img
+      {
+          height:50px;
+          margin-left:30px;
+          white-space:50px;
+            border:1px solid rgb(224,224,224);
+           border-radius:5px; 
+      }
+          .f2 img:hover 
+           {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+          
+      }
+      .fhr
+      {
+       width:400px;
+       height:2px;
+       border-style:dotted;
+       border-width:thick   
+      }
+         
+        
+        
+       
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+   
+
+     <div class="wrp">
+                  <div class="header">
+                  <div class="ffimg">         
+                  <a href="home.aspx"> <img  alt="OK"  class="i" src="Images/bca.png" align="middle" /></a>                 
+                   </div>
+                   
+                    
+                          <div class="cl">   
+                              <br />
+                      </div>
+           
+
+
+        <div class="menu">
+         <div class="label">   
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:HyperLink ID="HyperLink1" runat="server" ForeColor="Aqua" 
+                        NavigateUrl="~/Pre_Login_Home_Page.aspx" CssClass="label-style">Log out</asp:HyperLink>
+                              <br />
+
+                      </div>
+                    <br />
+                    <asp:Menu ID="Menu1" runat="server" BackColor="#666666" BorderColor="Aqua" 
+        BorderStyle="Inset" BorderWidth="3px" CssClass="separator" 
+        DynamicHorizontalOffset="2" ForeColor="Aqua" Orientation="Horizontal" Font-Bold="True" 
+                        Font-Italic="True" ViewStateMode="Enabled">
+        <DynamicHoverStyle BackColor="Black" BorderColor="Red" BorderStyle="Inset" 
+            BorderWidth="4px" ForeColor="Red" />
+        <DynamicMenuItemStyle BackColor="#333333" BorderColor="Red" 
+            BorderStyle="Inset" BorderWidth="3px" ForeColor="Aqua" Height="30px" 
+            HorizontalPadding="3px" ItemSpacing="5px" VerticalPadding="3px" 
+            Width="3px" />
+        <DynamicMenuStyle BackColor="#333333" BorderColor="Aqua" BorderStyle="Inset" 
+            BorderWidth="3px" HorizontalPadding="5px" VerticalPadding="5px" 
+            Width="5px" />
+        <Items>
+            <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/Staff_Home_Page.aspx"></asp:MenuItem>
+            <asp:MenuItem Text="Personal Profile" Value="Personal Details"></asp:MenuItem>
+            <asp:MenuItem Text="View Student Details" Value="View Attendance"></asp:MenuItem>
+            <asp:MenuItem Text="View Reports" Value="View Reports"></asp:MenuItem>
+            <asp:MenuItem Text="CONTACT US" Value="CONTACT US"></asp:MenuItem>
+            <asp:MenuItem Text="FeedBack" Value="FeedBack"></asp:MenuItem>
+            <asp:MenuItem Text="About Us" Value="About Us">
+                <asp:MenuItem Text="Who We Are" Value="Who We Are" 
+                    NavigateUrl="~/Staff_About Us_Who we are.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="History" Value="History" 
+                    NavigateUrl="~/Staff_About Us_History.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="Mission, Vision, Goal" Value="Mission, Vision, Goal" 
+                    NavigateUrl="~/Staff_About Us_Mission_Vision_Goal.aspx">
+                </asp:MenuItem>
+                <asp:MenuItem Text="Genesis" Value="Genesis" 
+                    NavigateUrl="~/Staff_About Us_Genesis.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="Management" Value="Management" 
+                    NavigateUrl="~/Staff_About Us_Management.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="Principal's Message" Value="Principal's Message" 
+                    NavigateUrl="~/Staff_About Us_Principal's Message.aspx">
+                </asp:MenuItem>
+            </asp:MenuItem>
+        </Items>
+        <StaticHoverStyle BackColor="Black" BorderColor="Red" BorderStyle="Inset" ForeColor="Red" 
+                            Font-Bold="True" Font-Italic="True" />
+        <StaticMenuItemStyle BackColor="#333333" BorderColor="Aqua" BorderStyle="Ridge" 
+            BorderWidth="3px" HorizontalPadding="19px" VerticalPadding="5px" ItemSpacing="4px" />
+        <StaticMenuStyle BackColor="#666666" BorderColor="Aqua" BorderStyle="Inset" 
+            BorderWidth="3px" Height="30px" HorizontalPadding="15px" 
+            VerticalPadding="5px" />
+    </asp:Menu>
+                    <br />
+           </div>
+
+
+
+            <div class="con">
+               
+                        
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+                      
+               
+            </div>
+
+
+
+
+   
+
+
+
+
+
+
+
+                  <br />
+   
+    <br />
+   
+    
+    
+
+       <div  class="ff">
+             <table>
+             <tr>
+             <td>
+               <div class="f11">
+             <center>CONTACT US
+             <hr class="fhr" />
+Address : Opp. Town Hall, Anand-388 001, Gujarat - India<br />
+Phone: +91 2692 250769<br />
+BCA : +91 2692 266062<br />
+E-mail: principal_acc@yahoo.com<br />
+Website: www.acc.ac.in</center>
+             
+             </div>
+             </td>
+             
+             
+             <td>
+              <div class="f2">
+             
+                 <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/Facebook.png" />
+                 <asp:Image ID="Image4" runat="server" ImageUrl="~/Images/insta.png" />
+                 <asp:Image ID="Image2" runat="server" ImageUrl="~/Images/what.png" />
+                 <asp:Image ID="Image3" runat="server" ImageUrl="~/Images/twi.png" />
+             
+             </div>
+             
+             </td>
+             
+             </tr>
+           
+            
+      </table>
+
+       </div>
+
+    </form>
+</body>
+</html>

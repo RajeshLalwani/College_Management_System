@@ -1,0 +1,459 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Pre_Login_MasterPage.master.cs" Inherits="Pre_Login_MasterPage" %>
+
+<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="ajaxToolkit" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="StyleSheet.css" rel="Stylesheet" type="text/css" />
+    <style type="text/css">
+        
+    /*   html
+        {
+        height:100%;    
+            
+        }
+        body
+        {
+            background:linear-gradient(to right, #00FFFF, #E0FFFF);
+
+        } */
+       .wrp
+       {
+           
+        width:950px;
+        margin:auto;   
+         
+       }
+       ffimg 
+       {
+            
+             background-color:#20b2aa;
+             width:950px;
+               
+           
+       }
+       
+        .i
+       {
+            width:950px;
+            border:1px solid purple;
+           border-radius:5px;
+           height:132px;
+       }
+       
+         *
+        {
+         margin:0px;
+         padding:0px;
+           
+        }          
+        
+        
+           .cl
+        {
+         clear:both;   
+        }
+        
+           .ff
+     {
+      border:1px solid rgb(224,224,224);
+           border-radius:5px; 
+           float:left;
+           margin-top:8px;
+           margin-bottom:8px;
+            min-height:100px;
+       width:100%;
+      background-color: LightSeaGreen; 
+      color: #B4ECE8; 
+      margin-top:auto; 
+       
+      position: relative;
+       
+     }
+     .f11
+     {
+              
+     margin-left:80px;
+          
+     }
+     .f2
+     {
+           margin-left:80px;
+     }
+      .f2 img
+      {
+          height:50px;
+          margin-left:30px;
+          white-space:50px;
+            border:1px solid rgb(224,224,224);
+           border-radius:5px; 
+      }
+          .f2 img:hover 
+           {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+          
+      }
+      .fhr
+      {
+       width:400px;
+       height:2px;
+       border-style:dotted;
+       border-width:thick   
+      }
+      
+       .label-style:hover
+        {
+             color: #CFF8F8;
+            
+            
+            /*box-shadow: 0px 0px 0px 5px white;  */
+             text-decoration:none;          
+           
+  
+        }
+        
+         .label-style
+        {
+           
+            
+             color:#1bae9a;
+             text-align:justify;
+             text-decoration:bold;
+             text-size:12px;
+                               
+  
+        }
+         
+          .link-label-style
+        {
+           
+          
+             text-decoration:none;
+             color:Aqua;
+             text-shadow: 1px 1px 1px var(--dark-green-color);
+                               
+  
+        }
+        
+           .link-label-style:hover
+        {
+           
+          
+            /* text-decoration:underline; */
+            text-decoration: underline;
+            /*text-shadow: 2px 2px 2px var(--dark-green-color);  */             
+  
+        }
+        
+        .menu-sub-style
+        {
+            color:Aqua;    
+        }
+  
+         
+        
+        
+  
+    </style>
+</head>
+<body>
+    <form id="form2" runat="server">
+   
+
+     <div class="wrp">
+                  <div class="header">
+                  <div class="ffimg">         
+                  <a href="home.aspx"> <img  alt="OK"  class="i" src="Images/bca.png" align="middle" /></a>                 
+                   </div>
+                   
+                    
+            <div class="label">   
+                          <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:HyperLink 
+                              ID="HyperLink1" runat="server" 
+                        NavigateUrl="~/Log in.aspx" CssClass="link-label-style" Font-Bold="False" 
+                              Font-Underline="False" BorderStyle="Double" BorderWidth="2px" 
+                              Height="23px" ToolTip="Log out here" Width="53px" Font-Size="14pt" 
+                              BackColor="LightSeaGreen" BorderColor="LightSeaGreen" ForeColor="#B4ECE8">Log in</asp:HyperLink>
+
+                          <br />
+                          <br />
+
+                      </div>
+
+        <div class="menu">
+                   
+             
+                   
+                    <br />
+                   
+             
+                   
+                    <asp:ScriptManager ID="ScriptManager1" runat="server">
+                    </asp:ScriptManager>
+                   
+
+                   <%-- <asp:Menu ID="Menu1" runat="server" DynamicHorizontalOffset="2" 
+            Font-Names="Verdana" Font-Size="1em" Height="70px" 
+            onmenuitemclick="Menu1_MenuItemClick" Orientation="Horizontal" 
+            RenderingMode="List" StaticSubMenuIndent="5px" Width="950px" 
+            BackColor="#1BAE9A" ForeColor="#05442C">
+            <StaticMenuStyle BorderColor="Aqua" BorderStyle="None" />
+            <StaticSelectedStyle BackColor="#1BAE9A" Font-Bold="True" 
+                Font-Underline="False" ForeColor="#B4ECE8" Font-Italic="True" />
+            <StaticMenuItemStyle ForeColor="#05442C" HorizontalPadding="45px" 
+                VerticalPadding="20px" Font-Bold="True" Font-Italic="False" />
+            <DynamicHoverStyle BackColor="#5FD6CE" ForeColor="#05442C" />
+            <DynamicSelectedStyle BackColor="#5FD6CE" BorderStyle="None" 
+                ForeColor="#05442C" />
+            <DynamicMenuItemStyle HorizontalPadding="1px" VerticalPadding="2px" />
+            <LevelSubMenuStyles>
+                <asp:SubMenuStyle Font-Underline="False" />
+                <asp:SubMenuStyle BackColor="#B4ECE8" BorderColor="Aqua" BorderStyle="Inset" 
+                    BorderWidth="3px" Font-Underline="False" />
+                <asp:SubMenuStyle BackColor="#B4ECE8" BorderColor="Aqua" BorderStyle="Inset" 
+                    BorderWidth="3px" Font-Underline="False" />
+                <asp:SubMenuStyle BackColor="#B4ECE8" BorderColor="Aqua" BorderStyle="Inset" 
+                    BorderWidth="3px" Font-Underline="False" />
+            </LevelSubMenuStyles>
+            <StaticHoverStyle Font-Underline="False" 
+                ForeColor="#CCFFFF" />--%>
+                <asp:Menu ID="Menu1" runat="server" DynamicHorizontalOffset="2" 
+            Font-Names="Verdana" Font-Size="1em" Height="70px" 
+            onmenuitemclick="Menu1_MenuItemClick" Orientation="Horizontal" 
+            RenderingMode="List" StaticSubMenuIndent="5px" Width="950px" 
+            BackColor="LightSeaGreen" ForeColor="#B4ECE8">
+            <StaticMenuStyle BorderColor="#B4ECE8" BackColor="LightSeaGreen" />
+            <StaticSelectedStyle BackColor="#1BAE9A" Font-Bold="True" 
+                Font-Underline="False" ForeColor="#006666" Font-Italic="True" />
+            <StaticMenuItemStyle ForeColor="#B4ECE8" HorizontalPadding="40px" 
+                VerticalPadding="20px" Font-Bold="True" Font-Italic="False" />
+            <DynamicHoverStyle BackColor="#5FD6CE" ForeColor="#05442C" />
+            <DynamicSelectedStyle BackColor="#5FD6CE" BorderStyle="None" 
+                ForeColor="#05442C" />
+            <DynamicMenuItemStyle HorizontalPadding="1px" VerticalPadding="2px" BackColor="#B4ECE8" 
+                        ForeColor="LightSeaGreen" />
+            <LevelSubMenuStyles>
+                <asp:SubMenuStyle Font-Underline="False" />
+                <asp:SubMenuStyle BackColor="#80FFFF" BorderColor="LightSeaGreen" BorderStyle="Inset" 
+                    BorderWidth="3px" Font-Underline="False" />
+                <asp:SubMenuStyle BackColor="#80FFFF" BorderColor="LightSeaGreen" BorderStyle="Inset" 
+                    BorderWidth="3px" Font-Underline="False" />
+                <asp:SubMenuStyle BackColor="#80FFFF" BorderColor="LightSeaGreen" BorderStyle="Inset" 
+                    BorderWidth="3px" Font-Underline="False" />
+            </LevelSubMenuStyles>
+            <StaticHoverStyle Font-Underline="False" 
+                ForeColor="#006666" />
+            <Items>
+                <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/Pre_Login_Home_Page.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="Apply For Addmission" Value="Apply For Addmission" 
+                    NavigateUrl="~/Pre_Login_Apply_For_Admission.aspx">
+                </asp:MenuItem>
+              <%--  <asp:MenuItem Text="Apply For Job" Value="Apply For Job" 
+                    NavigateUrl="~/Pre_Login_Apply_For_Job.aspx"></asp:MenuItem>--%>
+                <asp:MenuItem Text="ABOUT US" Value="View Payment">
+                    <asp:MenuItem Text="Who We Are" Value="Who We Are" 
+                        NavigateUrl="~/Pre_Login_About Us_Who we are.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="History" Value="History" 
+                        NavigateUrl="~/Pre_Login_About Us_History.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Mission, Vision, Goal" Value="Mission, Vision, Goal" 
+                        NavigateUrl="~/Pre_Login_About Us_Mission_Vision_Goal.aspx">
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="Genesis" Value="Genesis" 
+                        NavigateUrl="~/Pre_Login_About Us_Genesis.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Management" Value="Genesis" 
+                        NavigateUrl="~/Pre_Login_About Us_Management.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Principal's Message" Value="Principal's Message" 
+                        NavigateUrl="~/Pre_Login_About Us_Principal's Message.aspx">
+                    </asp:MenuItem>
+                </asp:MenuItem>
+              <%--  <asp:MenuItem Text="Student's Corner" Value="Student's Corner">
+                    <asp:MenuItem Text="Syllabus &amp; Structure" Value="Syllabus &amp; Structure">
+                        <asp:MenuItem Text="Semester 1" Value="Semester 1"></asp:MenuItem>
+                        <asp:MenuItem Text="Semester 2" Value="Semester 2"></asp:MenuItem>
+                        <asp:MenuItem Text="Semester 3" Value="Semester 3"></asp:MenuItem>
+                        <asp:MenuItem Text="Semester 4" Value="Semester 4"></asp:MenuItem>
+                        <asp:MenuItem Text="Semester 5" Value="Semester 5"></asp:MenuItem>
+                        <asp:MenuItem Text="Semester 6" Value="Semester 6"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="College Materials" Value="College Materials">
+                        <asp:MenuItem Text="Semester 1" Value="Semester 1"></asp:MenuItem>
+                        <asp:MenuItem Text="Semester 2" Value="Semester 2"></asp:MenuItem>
+                        <asp:MenuItem Text="Semester 3" Value="Semester 3"></asp:MenuItem>
+                        <asp:MenuItem Text="Semester 4" Value="Semester 4"></asp:MenuItem>
+                        <asp:MenuItem Text="Semester 5" Value="Semester 5"></asp:MenuItem>
+                        <asp:MenuItem Text="Semester 6" Value="Semester 6"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="Old Question Papers" Value="Old Question Papers">
+                        <asp:MenuItem Text="Internal Examination" Value="Internal Examination">
+                            <asp:MenuItem Text="Semester 1" Value="Semester 1"></asp:MenuItem>
+                            <asp:MenuItem Text="Semester 2" Value="Semester 2"></asp:MenuItem>
+                            <asp:MenuItem Text="Semester 3" Value="Semester 3"></asp:MenuItem>
+                            <asp:MenuItem Text="Semester 4" Value="Semester 4"></asp:MenuItem>
+                            <asp:MenuItem Text="Semester 5" Value="Semester 5"></asp:MenuItem>
+                            <asp:MenuItem Text="Semester 6" Value="Semester 6"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="External Examination" Value="External Examination">
+                            <asp:MenuItem Text="Semester 1" Value="Semester 1"></asp:MenuItem>
+                            <asp:MenuItem Text="Semester 2" Value="Semester 2"></asp:MenuItem>
+                            <asp:MenuItem Text="Semester 3" Value="Semester 3"></asp:MenuItem>
+                            <asp:MenuItem Text="Semester 4" Value="Semester 4"></asp:MenuItem>
+                            <asp:MenuItem Text="Semester 5" Value="Semester 5"></asp:MenuItem>
+                            <asp:MenuItem Text="Semester 6" Value="Semester 6"></asp:MenuItem>
+                        </asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="Question Bank Solutions" Value="Question Bank Solutions">
+                        <asp:MenuItem Text="Semester 1" Value="Semester 1"></asp:MenuItem>
+                        <asp:MenuItem Text="Semester 2" Value="Semester 2"></asp:MenuItem>
+                        <asp:MenuItem Text="Semester 3" Value="Semester 3"></asp:MenuItem>
+                        <asp:MenuItem Text="Semester 4" Value="Semester 4"></asp:MenuItem>
+                        <asp:MenuItem Text="Semester 5" Value="Semester 5"></asp:MenuItem>
+                        <asp:MenuItem Text="Semester 6" Value="Semester 6"></asp:MenuItem>
+                    </asp:MenuItem>
+                </asp:MenuItem>--%>
+                <asp:MenuItem Text="Contact Us" Value="Contact Us" 
+                    NavigateUrl="~/Pre_Login_Contact_Us.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="Feed Back" Value="Feed Back" 
+                    NavigateUrl="~/Pre_Login_FeedBack.aspx"></asp:MenuItem>
+            </Items>
+        </asp:Menu>
+        <ajaxToolkit:RoundedCornersExtender ID="Menu1_RoundedCornersExtender" 
+            runat="server" BehaviorID="Menu1_RoundedCornersExtender" 
+            TargetControlID="Menu1" />
+        <ajaxToolkit:DropShadowExtender ID="Menu1_DropShadowExtender" runat="server" 
+            BehaviorID="Menu1_DropShadowExtender" TargetControlID="Menu1" />
+        <br />
+
+
+                    <%--<asp:Menu ID="Menu1" runat="server" Orientation="Horizontal">
+                        <Items>
+                            <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/Pre_Login_Home_Page.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Apply For Admission" Value="Apply For Admission" 
+                                NavigateUrl="~/Pre_Login_Apply_For_Admission.aspx">
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Apply For Job" Value="Apply For Job" 
+                                NavigateUrl="~/Pre_Login_Apply_For_Job.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Feed Back" Value="Feed Back">
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Contact Us" Value="Contact Us"></asp:MenuItem>
+                            <asp:MenuItem Text="About Us" Value="About Us">
+                                <asp:MenuItem NavigateUrl="~/Pre_Login_About Us_Who we are.aspx" 
+                                    Text="Who We Are" Value="Who We Are"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Pre_Login_About Us_History.aspx" Text="History" 
+                                    Value="History"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Pre_Login_About Us_Mission_Vision_Goal.aspx" 
+                                    Text="Mission, Vision, Goal" Value="Mission, Vision, Goal"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Pre_Login_About Us_Genesis.aspx" Text="Genesis" 
+                                    Value="Genesis"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Pre_Login_About Us_Management.aspx" 
+                                    Text="Management" Value="Management"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Pre_Login_About Us_Principal's Message.aspx" 
+                                    Text="Principal's Message" Value="Principal's Message"></asp:MenuItem>
+                            </asp:MenuItem>
+                        </Items>
+                        <StaticMenuItemStyle BackColor="#333333" BorderColor="Aqua" BorderStyle="Inset" 
+                            BorderWidth="3px" Font-Bold="True" Font-Italic="True" ForeColor="Aqua" 
+                            Height="30px" HorizontalPadding="37px" VerticalPadding="3px" />
+                    </asp:Menu>
+                    <ajaxToolkit:DropShadowExtender ID="Menu1_DropShadowExtender" runat="server" 
+                        BehaviorID="Menu1_DropShadowExtender" TargetControlID="Menu1">
+                    </ajaxToolkit:DropShadowExtender>
+                    <br />--%>
+           </div>
+
+
+
+
+
+        <%--   <div class="container">
+        <nav class="menu">
+            <ul class="main-menu">
+                <li class="active"><i class="fa fa-home"></i>Home</li>
+                 <li><i class="fa fa-home"></i>Apply For Admission</li>
+                <li class="with-submenu">
+                    <i class="fa fa-briefcase"></i>Apply For Admission <i class="fa fa-caret-down"></i>
+                    <ul class="submenu">
+                        <li>React</li>
+                        <li>JavaScript</li>
+                        <li>CSS</li>
+                        <li>Animation</li>
+                    </ul>
+                </li>
+                <li><i class="fa fa-user"></i>About US</li>
+                <li><i class="fa fa-search"></i>Search</li>
+            </ul>
+        </nav>
+--%>
+
+
+   <div class="con">
+               
+                        
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+                      
+               
+            </div>
+
+   
+    <br />  <br /> 
+               
+       <div  class="ff">
+             <table>
+             <tr>
+             <td>
+               <div class="f11">
+             <center>CONTACT US
+             <hr class="fhr" />
+Address : Opp. Town Hall, Anand-388 001, Gujarat - India<br />
+Phone: +91 2692 250769<br />
+BCA : +91 2692 266062<br />
+E-mail: principal_acc@yahoo.com<br />
+Website: www.acc.ac.in</center>
+             
+             </div>
+             </td>
+             
+             
+             <td>
+              <div class="f2">
+             
+                 <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/Facebook.png" />
+                 <asp:Image ID="Image4" runat="server" ImageUrl="~/Images/insta.png" />
+                 <asp:Image ID="Image2" runat="server" ImageUrl="~/Images/what.png" />
+                 <asp:Image ID="Image3" runat="server" ImageUrl="~/Images/twi.png" />
+             
+             </div>
+             
+             </td>
+             
+             </tr>
+           
+            
+      </table>
+
+       </div>
+
+    </form>
+</body>
+</html>
